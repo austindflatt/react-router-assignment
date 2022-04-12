@@ -1,13 +1,9 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Link, useSearchParams } from 'react-router-dom';
 import { TextInput, Button } from '@mantine/core';
 
 
 const ContactForm = () => {
-  const [name, setName] = useState('');
-  const [number, setNumber] = useState('');
-  const [age, setAge] = useState('');
-  const [email, setEmail] = useState('');
   
   return (
     <>
